@@ -28,3 +28,7 @@ span.purpEmphasis {
     color: #c271ff;
     font-weight: bold;
 }
+
+section.section--quotes {
+    background-color: #c271ff;
+}
