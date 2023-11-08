@@ -1,20 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hompage - Smile School</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
-<body>
-    
+
+<body class="imageBackground" style="background-image: url(./images/pic_1.jpg); background-color: #08192f;">
+    <!-- Header -->
+    <header class="bg-transparent">
+        <a class="d-block d-md-none" href="#navLinksMobile" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <img class="m-3" src="./images/menu.svg" alt="Navigation menu">
+        </a>
+        <nav class="m-4 d-flex justify-content-between align-items-center flex-column flex-md-row">
+            <a href="#" class="ml-md-5 d-flex d-md-block flex-column">
+                <img class="m-auto m-md-0" src="./images/smile_off.png" alt="Smile logo" width="40" height="30">
+                <img class="ml-1 mt-md-0 mt-2" src="images/logo.png" alt="Smile logo text" width="140" height="40">
+            </a>
+            <ul class="nav mr-md-5 d-md-flex d-none">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">COURSES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">PRICING</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">LOGIN</a>
+                </li>
+            </ul>
+            <ul class="nav mr-md-5 collapse flex-column text-center" id="navLinksMobile">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">COURSES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">PRICING</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">LOGIN</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="jumbotron bg-transparent text-center d-flex flex-column">
+            <h1 class="text-white font-weight-bolder display-3 mb-0">
+                Get schooled
+            </h1>
+            <small class="text-white font-weight-bold" style="word-spacing: 2.5rem;">
+                SMILES GRIN LAUGH
+            </small>
+            <a href="#" class="mt-5">
+                <button class="btn btn-primary">REGISTER FOR FREE</button>
+            </a>
+        </section>
+
+        <!-- Pros -->
+        <section class="text-white text-center">
+            <h4 class="font-weight-light mb-5"><span class="purpEmphasis">Learn</span> from the pros</h4>
+            <div class="row row-cols-2 row-cols-md-4 w-100">
+                <div class="col">
+                    <img class="profile-pic"
+                     src="./images/profile_1.jpg"
+                     alt="Phillip Massey"
+                     width="200" height="200">
+                     <p class="m-0 font-weight-bold">Phillip Massey</p>
+                     <p class="m-0 font-weight-bold">« Smile of the year »</p>
+                     <p class="font-weight-bold">2018 - 2019</p>
+                </div>
+                <div class="col">
+                    <img class="profile-pic"
+                     src="./images/profile_2.jpg"
+                     alt="Nannie Lawrence"
+                     width="200" height="200">
+                     <p class="m-0 font-weight-bold">Nannie Lawrence</p>
+                     <p class="m-0 font-weight-bold">Best « little smile »</p>
+                     <p class="font-weight-bold">2017</p>
+                </div>
+                <div class="col">
+                    <img class="profile-pic"
+                     src="./images/profile_3.jpg"
+                     alt="Bruce Walters"
+                     width="200" height="200">
+                     <p class="m-0 font-weight-bold">Bruce Walters</p>
+                     <p class="m-0 font-weight-bold">Best « Friend Smile »</p>
+                     <p class="font-weight-bold">Live perfomance 2019</p>
+                </div>
+                <div class="col">
+                    <img class="profile-pic"
+                     src="./images/profile_4.jpg"
+                     alt="Henry Hughes"
+                     width="200" height="200">
+                     <p class="m-0 font-weight-bold">Henry Hughes</p>
+                     <p class="m-0 font-weight-bold">« 24h smiles » winner</p>
+                     <p class="font-weight-bold">2016 - 2019</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>

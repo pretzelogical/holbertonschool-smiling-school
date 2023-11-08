@@ -1,0 +1,30 @@
+.imageBackground {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+p, h1, a {
+    font-family: source sans pro;
+}
+
+a.nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+.btn {
+    border-radius: 6rem;
+    background-color: #c271ff;
+    font-weight: bold;
+    padding: 0.7rem 1.2rem;
+}
+
+.profile-pic {
+    border-radius: 100%;
+}
+
+span.purpEmphasis {
+    color: #c271ff;
+    font-weight: bold;
+}
