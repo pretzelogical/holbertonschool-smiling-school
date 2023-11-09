@@ -37,3 +37,14 @@ section.section--quotes {
 .card-body div p span {
     white-space: nowrap;
 }
+
+@font-face {
+    font-family: hb-symbol;
+    src: url(./holberton_school-icon/fonts/holberton_school-icon.ttf);
+}
+
+.symbol-font a p {
+    font-family: hb-symbol;
+    font-size: 28px;
+    color: white;
+}
