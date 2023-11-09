@@ -1,5 +1,5 @@
 .imageBackground {
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center top;
 }
@@ -16,6 +16,7 @@ a.nav-link {
 .btn {
     border-radius: 6rem;
     background-color: #c271ff;
+    border: none;
     font-weight: bold;
     padding: 0.7rem 1.2rem;
 }
@@ -31,4 +32,8 @@ span.purpEmphasis {
 
 section.section--quotes {
     background-color: #c271ff;
+}
+
+.card-body div p span {
+    white-space: nowrap;
 }
