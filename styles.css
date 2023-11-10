@@ -4,7 +4,7 @@
     background-position: center top;
 }
 
-p, h1, a {
+p, h1, h2, h3 a, caption, small {
     font-family: source sans pro;
 }
 
@@ -19,6 +19,7 @@ a.nav-link {
     border: none;
     font-weight: bold;
     padding: 0.7rem 1.2rem;
+    white-space: nowrap;
 }
 
 .profile-pic {
@@ -43,7 +44,8 @@ section.section--quotes {
     src: url(./holberton_school-icon/fonts/holberton_school-icon.ttf);
 }
 
-.symbol-font a p {
+.symbol-font a p,
+.symbol-font {
     font-family: hb-symbol;
     font-size: 28px;
     color: white;
