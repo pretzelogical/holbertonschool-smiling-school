@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hompage - Smile School</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="imageBackground"
+    style="background-image: url(./images/pic_2.jpg); background-size: cover; background-color: #071629;">
+    <!-- Header -->
+    <header class="bg-transparent mb-5">
+        <a class="d-block d-md-none" href="#navLinksMobile" data-toggle="collapse" role="button" aria-expanded="false"
+            aria-controls="collapseExample">
+            <img class="m-3" src="./images/menu.svg" alt="Navigation menu">
+        </a>
+        <nav class="m-4 d-flex justify-content-md-between align-items-center flex-column flex-md-row">
+            <a href="#" class="ml-md-5 d-flex d-md-block flex-column">
+                <img class="m-auto m-md-0" src="./images/smile_off.png" alt="Smile logo" width="40" height="30">
+                <img class="ml-1 mt-md-0 mt-2" src="images/logo.png" alt="Smile logo text" width="140" height="40">
+            </a>
+            <ul class="nav mr-md-5 d-md-flex d-none">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">COURSES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">PRICING</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">LOGIN</a>
+                </li>
+            </ul>
+            <ul class="nav collapse flex-column text-center" id="navLinksMobile">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">COURSES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">PRICING</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">LOGIN</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="text-white my-5 py-5">
+            <div class="d-flex align-items-center justify-content-center">
+                <p class="font-weight-bold mr-2 mt-2" style="font-size: 1.5rem;">What is</p>
+                <div>
+                    <img class="m-auto" src="./images/smile_off.png" alt="Smile logo" width="40" height="30">
+                    <img class="ml-1" src="images/logo.png" alt="Smile logo text" width="140" height="40">
+                </div>
+                <p class="font-weight-bold ml-1 mt-2" style="font-size: 1.5rem;">?</p>
+            </div>
+            <h1 class="text-center font-weight-bolder pt-5">Go pro!</h1>
+        </section>
+
+        <!-- Prices -->
+        <section class="text-white pb-5">
+            <div class="container">
+                <div class="row pb-4">
+                    <div class="d-none d-md-block col-md-4 col-lg-5">
+                        &nbsp;
+                    </div>
+                    <div class="col col-lg-auto col-md-3 ml-lg-0 d-flex flex-column">
+                        <button class="btn btn-primary">BUY 3 MONTHS</button>
+                        <h3 class="text-center mt-4" style="font-size: 2.7rem;">$3.60</h3>
+                        <small class="small m-0 text-center text-white-50"
+                            style="font-size: 0.8rem;">$1.20/month</small>
+                    </div>
+                    <div class="col col-lg-auto col-md-3 offset-lg-2 offset-md-1 pl-md-0 d-flex flex-column">
+                        <button class="btn btn-primary text-center">BUY 1 YEAR</button>
+                        <h3 class="text-center mt-4" style="font-size: 2.7rem;">$12.99</h3>
+                        <small class="small m-0 text-center text-white-50"
+                            style="font-size: 0.8rem;">$1.08/month</small>
+                    </div>
+                </div>
+                <div class="row pb-4 d-md-none">
+                    <div class="d-none d-md-block col-md-4 col-lg-5">
+                        &nbsp;
+                    </div>
+                    <div class="col col-lg-auto col-md-3 ml-lg-0 d-flex flex-column">
+                        <p class="text-center">3 MONTHS</p>
+                    </div>
+                    <div class="col col-lg-auto col-md-3 offset-lg-2 offset-md-1 pl-md-0 d-flex flex-column">
+                        <p class="text-center">1 YEAR</p>
+                    </div>
+                </div>
+                <div class="row justify-content-start" style="border-bottom: solid 1px #ffffff2f;">
+                    <div class="col-5">
+                        <p class="w-50 font-weight-bold">Unlimited access to all tutorials</p>
+                    </div>
+                    <div class="col-4 col-lg-3 ml-lg-5 pl-lg-4">
+                        <p class="symbol-font text-success"></p>
+                    </div>
+                    <div class="col-auto ml-lg-5 pl-lg-5">
+                        <p class="symbol-font text-success"></p>
+                    </div>
+                </div>
+                <div class="row justify-content-start" style="border-bottom: solid 1px #ffffff2f;">
+                    <div class="col-5">
+                        <p class="w-50 font-weight-bold">Access SmileSchool private forums</p>
+                    </div>
+                    <div class="col-4 col-lg-3 ml-lg-5 pl-lg-4">
+                        <p class="symbol-font text-success"></p>
+                    </div>
+                    <div class="col-auto ml-lg-5 pl-lg-5">
+                        <p class="symbol-font text-success"></p>
+                    </div>
+                </div>
+                <div class="row justify-content-start" style="border-bottom: solid 1px #ffffff2f;">
+                    <div class="col-5">
+                        <p class="w-50 font-weight-bold">Access Smiles contests & Smiles Analysis</p>
+                    </div>
+                    <div class="col-4 col-lg-3 ml-lg-5 pl-lg-4">
+                        <p class="symbol-font text-success"></p>
+                    </div>
+                    <div class="col-auto ml-lg-5 pl-lg-5">
+                        <p class="symbol-font text-success"></p>
+                    </div>
+                </div>
+                <div class="row justify-content-start" style="border-bottom: solid 1px #ffffff2f;">
+                    <div class="col-5">
+                        <p class="w-50 font-weight-bold">Get a free toothbrush</p>
+                    </div>
+                    <div class="col-4 col-lg-3 ml-lg-5 pl-lg-4">
+                        <p class="symbol-font text-success">&nbsp;</p>
+                    </div>
+                    <div class="col-auto ml-lg-5 pl-lg-5">
+                        <p class="symbol-font text-success"></p>
+                    </div>
+                </div>
+                <div class="row justify-content-start" style="border-bottom: solid 1px #ffffff2f;">
+                    <div class="col-5">
+                        <img src="./images/signal.png" alt="Signal logo" width="88" height="35">
+                        <p class="w-50 font-weight-bold">Exclusive discount on all signal products</p>
+                    </div>
+                    <div class="col-4 col-lg-3 ml-lg-5 pl-lg-4">
+                        <p class="symbol-font text-success">&nbsp;</p>
+                    </div>
+                    <div class="col-auto ml-lg-5 pl-lg-5">
+                        <p class="symbol-font text-success"></p>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Quotes -->
+        <section id="quotesCarousel" class="section--quotes carousel slide text-white" data-ride="carousel">
+            <div class="carousel-inner" style="padding: 4rem 10rem;">
+
+                <div class="carousel-item active" data-interval="100000">
+                    <div class="d-md-flex align-items-center justify-content-center">
+                        <img class="profile-pic mx-5" src="./images/profile_5.jpg" alt="Person" width="150"
+                            height="150">
+                        <div class="d-flex flex-column my-4 mx-2">
+                            <p>« Those tutorials are concise and go straight to the point. I can't think of a better
+                                place to learn smiling. And it's so fun!</p>
+                            <p class="font-weight-bold mb-0">Person Name</p>
+                            <p class="font-italic">weather presenter</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-interval="100000">
+                    <div class="d-md-flex align-items-center justify-content-center">
+                        <img class="profile-pic mx-5" src="./images/profile_5.jpg" alt="Person" width="150"
+                            height="150">
+                        <div class="d-flex flex-column my-4 mx-2">
+                            <p>« Those tutorials are concise and go straight to the point. I can't think of a better
+                                place to learn smiling. And it's so fun!</p>
+                            <p class="font-weight-bold mb-0">Person Name</p>
+                            <p class="font-italic">weather presenter</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev bg-transparent border-0" type="button" data-target="#quotesCarousel"
+                data-slide="prev">
+                <img src="./images/arrow_white_left.png" aria-hidden="true" width="30" height="65"></img>
+                <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next bg-transparent border-0" type="button" data-target="#quotesCarousel"
+                data-slide="next">
+                <img src="./images/arrow_white_right.png" aria-hidden="true" width="30" height="65"></img>
+                <span class="sr-only">Previous</span>
+            </button>
+        </section>
+
+        <!-- FAQ -->
+
+        <section class="bg-white">
+            <h2 class="display-2 text-center py-4">F.A.Q</h2>
+            <div class="container-fluid p-md-3">
+                <div class="row row-cols-1 row-cols-md-2 p-md-5 justify-content-md-between justify-content-center align-items-center">
+                    <div class="col-8 col-md-5">
+                        <h4>How does this work?</h4>
+                        <p class="text-black-50">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit
+                             esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident,
+                             sunt in culpa qui officia deserunt mollit
+                            anim id est laborum.
+                        </p>
+                    </div>
+                    <div class="col-8 col-md-5">
+                        <h4>How does this work?</h4>
+                        <p class="text-black-50">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit
+                             esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident,
+                             sunt in culpa qui officia deserunt mollit
+                            anim id est laborum.
+                        </p>
+                    </div>
+                    <div class="col-8 col-md-5">
+                        <h4>How does this work?</h4>
+                        <p class="text-black-50">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit
+                             esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident,
+                             sunt in culpa qui officia deserunt mollit
+                            anim id est laborum.
+                        </p>
+                    </div>
+                    <div class="col-8 col-md-5">
+                        <h4>How does this work?</h4>
+                        <p class="text-black-50">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit
+                             esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident,
+                             sunt in culpa qui officia deserunt mollit
+                            anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="p-5 text-white">
+        <div class="d-flex justify-content-between">
+            <a href="#" class="ml-md-5 d-flex d-md-block flex-column">
+                <img class="m-auto m-md-0" src="./images/smile_off.png" alt="Smile logo" width="40" height="30">
+                <img class="ml-1 mt-md-0 mt-2" src="images/logo.png" alt="Smile logo text" width="140" height="40">
+            </a>
+            <div class="symbol-font d-flex" style="gap: 12px;">
+                <a href="#">
+                    <p></p>
+                </a>
+                <a href="#">
+                    <p></p>
+                </a>
+                <a href="#">
+                    <p></p>
+                </a>
+            </div>
+        </div>
+        <p class="text-center text-white-50 pt-5">©Smileschool 2020</p>
+    </footer>
+</body>
+
+</html>
