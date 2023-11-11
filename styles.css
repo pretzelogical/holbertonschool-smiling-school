@@ -4,8 +4,19 @@
     background-position: center top;
 }
 
-p, h1, h2, h3 a, caption, small {
+select {
+    appearance: none;
+    background-image: url(./images/down-triangle.svg);
+    background-repeat: no-repeat;
+    background-position: top 50% right 15px;
+}
+
+p, h1, h2, h3 a, caption, small, label {
     font-family: source sans pro;
+}
+
+.font-coiny {
+    font-family: Coiny;
 }
 
 a.nav-link {
