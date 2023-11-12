@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Smile School</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="imageBackground"
+    style="background-image: url(./images/pic_3.jpg); background-size: cover; background-color: #071629;">
+    <!-- Header -->
+    <header class="bg-transparent mb-5">
+        <a class="d-block d-md-none" href="#navLinksMobile" data-toggle="collapse" role="button" aria-expanded="false"
+            aria-controls="collapseExample">
+            <img class="m-3" src="./images/menu.svg" alt="Navigation menu">
+        </a>
+        <nav class="m-4 d-flex justify-content-md-between align-items-center flex-column flex-md-row">
+            <a href="#" class="ml-md-5 d-flex d-md-block flex-column">
+                <img class="m-auto m-md-0" src="./images/smile_off.png" alt="Smile logo" width="40" height="30">
+                <img class="ml-1 mt-md-0 mt-2" src="images/logo.png" alt="Smile logo text" width="140" height="40">
+            </a>
+            <ul class="nav mr-md-5 d-md-flex d-none">
+                <li class="nav-item">
+                    <a href="#" class="nav-link" style="border-bottom: 2px solid #c271ff; color: #c271ff;">COURSES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">PRICING</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">LOGIN</a>
+                </li>
+            </ul>
+            <ul class="nav collapse flex-column text-center" id="navLinksMobile">
+                <li class="nav-item">
+                    <a href="#" class="nav-link" style="border-bottom: 2px solid #c271ff; color: #c271ff;">COURSES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">PRICING</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">LOGIN</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="text-white d-none d-md-flex justify-content-center mb-5">
+            <h1 class="font-coiny text-center px-5" style="width: 800px;">« Don't cry because it's over <span
+                    class="purpEmphasis">Smile</span> because it happened. »</h1>
+        </section>
+
+        <!-- Search -->
+        <section class="text-white p-5" style="background-color: #c271ff;">
+            <form action="#">
+                <div class="container">
+                    <div class="row form-group d-flex">
+                        <div class="col-lg">
+                            <label for="keywordSearch">KEYWORDS</label>
+                            <div class="d-flex pl-2" style="height: calc(1.5em + .75em + 2px); background-color: #ffffff41; border: none; border-bottom: 1px solid #FFFFFF; line-height: 38px">
+                                <p class="symbol-font"></p>
+                                <input type="search" class="form-control" name="keywordSearch" id="keywordSearch" style="border-radius: 0px; background-color: #ffffff00;
+                                  border: none; border-bottom: 1px solid #FFFFFF;">
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="topicSearch">TOPIC</label>
+                            <div class="d-flex pl-2" style="height: calc(1.5em + .75em + 2px); background-color: #ffffff41; border: none; border-bottom: 1px solid #FFFFFF; line-height: 38px">
+                                <select type="" class="form-control text-white" name="keywordSearch" id="topicSearch" style="border-radius: 0px; background-color: #ffffff00;
+                                  border: none; border-bottom: 1px solid #FFFFFF;">
+                                  <option value="Novice">Novice</option>
+                                  <option value="Intermediate">Intermediate</option>
+                                  <option value="Expert">Expert</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label for="topicSearch">SORT BY</label>
+                            <div class="d-flex pl-2" style="height: calc(1.5em + .75em + 2px); background-color: #ffffff41; border: none; border-bottom: 1px solid #FFFFFF; line-height: 38px">
+                                <select type="" class="form-control text-white" name="keywordSearch" id="topicSearch" style="border-radius: 0px; background-color: #ffffff00;
+                                  border: none; border-bottom: 1px solid #FFFFFF;">
+                                  <option value="Most Popular">Most Popular</option>
+                                  <option value="Most Favorited">Most Favorited</option>
+                                  <option value="Latest">Latest</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <!-- Results -->
+        <section class="bg-white py-5">
+            <div class="d-flex p-5">
+                <p">11 videos</p>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center m-auto" style="max-width: 1500px;">
+                <div class="border-0" style="max-width: 510px;">
+                    <div class="position-relative rounded-top">
+                        <img src="./images/thumbnail_4.jpg" alt="Woman smiling" width="295" height="174">
+                        <img class="position-absolute" src="./images/play.png" alt="Play" width="65"
+                            height="65" style="left: 116px; top: 62px;">
+                    </div>
+                    <div class="card-body" style="max-width: 320px;">
+                        <h5 class="card-title">Diagonal smile</h5>
+                        <div class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                            eiusmod.</div>
+                        <div class="my-2 d-flex align-items-center text-center">
+                            <img width="50" height="50" class="profile-pic" src="./images/profile_1.jpg"
+                                alt="">
+                            <p class="m-0"><span class="purpEmphasis ml-2">Phillip Massey</span></p>
+                        </div>
+                        <div class="d-flex justify-content-start my-2">
+                            <div class="d-flex" style="gap: 0.2rem;">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_off.png" width="30" height="30" alt="Star off">
+                            </div>
+                            <p class="ml-5" style="font-size: 1.3rem;"><span class="purpEmphasis">8
+                                    min</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-0" style="max-width: 510px;">
+                    <div class="position-relative">
+                        <img src="./images/thumbnail_3.jpg" alt="Woman smiling" width="295" height="174">
+                        <img class="position-absolute" src="./images/play.png" alt="Play" width="65"
+                            height="65" style="left: 116px; top: 62px;">
+                    </div>
+                    <div class="card-body" style="max-width: 320px;">
+                        <h5 class="card-title">Sad smile</h5>
+                        <div class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                            eiusmod.</div>
+                        <div class="my-2 d-flex align-items-center text-center">
+                            <img width="50" height="50" class="profile-pic" src="./images/profile_1.jpg"
+                                alt="">
+                            <p class="m-0"><span class="purpEmphasis ml-2">Phillip Massey</span></p>
+                        </div>
+                        <div class="d-flex justify-content-start my-2">
+                            <div class="d-flex" style="gap: 0.2rem;">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_off.png" width="30" height="30" alt="Star off">
+                            </div>
+                            <p class="ml-5" style="font-size: 1.3rem;"><span class="purpEmphasis">8
+                                    min</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-0" style="max-width: 510px;">
+                    <div class="position-relative">
+                        <img src="./images/thumbnail_1.jpg" alt="Man smiling" width="295" height="174">
+                        <img class="position-absolute" src="./images/play.png" alt="Play" width="65"
+                            height="65" style="left: 116px; top: 62px;">
+                    </div>
+                    <div class="card-body" style="max-width: 320px;">
+                        <h5 class="card-title">Natural smile</h5>
+                        <div class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                            eiusmod.</div>
+                        <div class="my-2 d-flex align-items-center text-center">
+                            <img width="50" height="50" class="profile-pic" src="./images/profile_1.jpg"
+                                alt="">
+                            <p activeclass="m-0"><span class="purpEmphasis ml-2">Phillip Massey</span></p>
+                        </div>
+                        <div class="d-flex justify-content-start my-2">
+                            <div class="d-flex" style="gap: 0.2rem;">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_off.png" width="30" height="30" alt="Star off">
+                            </div>
+                            <p class="ml-5" style="font-size: 1.3rem;"><span class="purpEmphasis">8
+                                    min</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-0" style="max-width: 320px;">
+                    <div class="position-relative">
+                        <img src="./images/thumbnail_2.jpg" alt="Man smiling" width="295" height="174">
+                        <img class="position-absolute" src="./images/play.png" alt="Play" width="65"
+                            height="65" style="left: 116px; top: 62px;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Happy smile</h5>
+                        <div class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                            eiusmod.</div>
+                        <div class="my-2 d-flex align-items-center text-center">
+                            <img width="50" height="50" class="profile-pic" src="./images/profile_1.jpg"
+                                alt="">
+                            <p class="m-0"><span class="purpEmphasis ml-2">Phillip Massey</span></p>
+                        </div>
+                        <div class="d-flex justify-content-start my-2">
+                            <div class="d-flex" style="gap: 0.2rem;">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_off.png" width="30" height="30" alt="Star off">
+                            </div>
+                            <p class="ml-5" style="font-size: 1.3rem;"><span class="purpEmphasis">8
+                                    min</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-0" style="max-width: 510px;">
+                    <div class="position-relative rounded-top">
+                        <img src="./images/thumbnail_4.jpg" alt="Woman smiling" width="295" height="174">
+                        <img class="position-absolute" src="./images/play.png" alt="Play" width="65"
+                            height="65" style="left: 116px; top: 62px;">
+                    </div>
+                    <div class="card-body" style="max-width: 320px;">
+                        <h5 class="card-title">Diagonal smile</h5>
+                        <div class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                            eiusmod.</div>
+                        <div class="my-2 d-flex align-items-center text-center">
+                            <img width="50" height="50" class="profile-pic" src="./images/profile_1.jpg"
+                                alt="">
+                            <p class="m-0"><span class="purpEmphasis ml-2">Phillip Massey</span></p>
+                        </div>
+                        <div class="d-flex justify-content-start my-2">
+                            <div class="d-flex" style="gap: 0.2rem;">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_off.png" width="30" height="30" alt="Star off">
+                            </div>
+                            <p class="ml-5" style="font-size: 1.3rem;"><span class="purpEmphasis">8
+                                    min</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-0" style="max-width: 510px;">
+                    <div class="position-relative">
+                        <img src="./images/thumbnail_3.jpg" alt="Woman smiling" width="295" height="174">
+                        <img class="position-absolute" src="./images/play.png" alt="Play" width="65"
+                            height="65" style="left: 116px; top: 62px;">
+                    </div>
+                    <div class="card-body" style="max-width: 320px;">
+                        <h5 class="card-title">Sad smile</h5>
+                        <div class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                            eiusmod.</div>
+                        <div class="my-2 d-flex align-items-center text-center">
+                            <img width="50" height="50" class="profile-pic" src="./images/profile_1.jpg"
+                                alt="">
+                            <p class="m-0"><span class="purpEmphasis ml-2">Phillip Massey</span></p>
+                        </div>
+                        <div class="d-flex justify-content-start my-2">
+                            <div class="d-flex" style="gap: 0.2rem;">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_off.png" width="30" height="30" alt="Star off">
+                            </div>
+                            <p class="ml-5" style="font-size: 1.3rem;"><span class="purpEmphasis">8
+                                    min</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-0" style="max-width: 510px;">
+                    <div class="position-relative">
+                        <img src="./images/thumbnail_1.jpg" alt="Man smiling" width="295" height="174">
+                        <img class="position-absolute" src="./images/play.png" alt="Play" width="65"
+                            height="65" style="left: 116px; top: 62px;">
+                    </div>
+                    <div class="card-body" style="max-width: 320px;">
+                        <h5 class="card-title">Natural smile</h5>
+                        <div class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                            eiusmod.</div>
+                        <div class="my-2 d-flex align-items-center text-center">
+                            <img width="50" height="50" class="profile-pic" src="./images/profile_1.jpg"
+                                alt="">
+                            <p activeclass="m-0"><span class="purpEmphasis ml-2">Phillip Massey</span></p>
+                        </div>
+                        <div class="d-flex justify-content-start my-2">
+                            <div class="d-flex" style="gap: 0.2rem;">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_off.png" width="30" height="30" alt="Star off">
+                            </div>
+                            <p class="ml-5" style="font-size: 1.3rem;"><span class="purpEmphasis">8
+                                    min</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-0" style="max-width: 320px;">
+                    <div class="position-relative">
+                        <img src="./images/thumbnail_2.jpg" alt="Man smiling" width="295" height="174">
+                        <img class="position-absolute" src="./images/play.png" alt="Play" width="65"
+                            height="65" style="left: 116px; top: 62px;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Happy smile</h5>
+                        <div class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                            eiusmod.</div>
+                        <div class="my-2 d-flex align-items-center text-center">
+                            <img width="50" height="50" class="profile-pic" src="./images/profile_1.jpg"
+                                alt="">
+                            <p class="m-0"><span class="purpEmphasis ml-2">Phillip Massey</span></p>
+                        </div>
+                        <div class="d-flex justify-content-start my-2">
+                            <div class="d-flex" style="gap: 0.2rem;">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_off.png" width="30" height="30" alt="Star off">
+                            </div>
+                            <p class="ml-5" style="font-size: 1.3rem;"><span class="purpEmphasis">8
+                                    min</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-0" style="max-width: 510px;">
+                    <div class="position-relative rounded-top">
+                        <img src="./images/thumbnail_4.jpg" alt="Woman smiling" width="295" height="174">
+                        <img class="position-absolute" src="./images/play.png" alt="Play" width="65"
+                            height="65" style="left: 116px; top: 62px;">
+                    </div>
+                    <div class="card-body" style="max-width: 320px;">
+                        <h5 class="card-title">Diagonal smile</h5>
+                        <div class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                            eiusmod.</div>
+                        <div class="my-2 d-flex align-items-center text-center">
+                            <img width="50" height="50" class="profile-pic" src="./images/profile_1.jpg"
+                                alt="">
+                            <p class="m-0"><span class="purpEmphasis ml-2">Phillip Massey</span></p>
+                        </div>
+                        <div class="d-flex justify-content-start my-2">
+                            <div class="d-flex" style="gap: 0.2rem;">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_off.png" width="30" height="30" alt="Star off">
+                            </div>
+                            <p class="ml-5" style="font-size: 1.3rem;"><span class="purpEmphasis">8
+                                    min</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-0" style="max-width: 510px;">
+                    <div class="position-relative">
+                        <img src="./images/thumbnail_3.jpg" alt="Woman smiling" width="295" height="174">
+                        <img class="position-absolute" src="./images/play.png" alt="Play" width="65"
+                            height="65" style="left: 116px; top: 62px;">
+                    </div>
+                    <div class="card-body" style="max-width: 320px;">
+                        <h5 class="card-title">Sad smile</h5>
+                        <div class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                            eiusmod.</div>
+                        <div class="my-2 d-flex align-items-center text-center">
+                            <img width="50" height="50" class="profile-pic" src="./images/profile_1.jpg"
+                                alt="">
+                            <p class="m-0"><span class="purpEmphasis ml-2">Phillip Massey</span></p>
+                        </div>
+                        <div class="d-flex justify-content-start my-2">
+                            <div class="d-flex" style="gap: 0.2rem;">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_off.png" width="30" height="30" alt="Star off">
+                            </div>
+                            <p class="ml-5" style="font-size: 1.3rem;"><span class="purpEmphasis">8
+                                    min</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-0" style="max-width: 510px;">
+                    <div class="position-relative">
+                        <img src="./images/thumbnail_1.jpg" alt="Man smiling" width="295" height="174">
+                        <img class="position-absolute" src="./images/play.png" alt="Play" width="65"
+                            height="65" style="left: 116px; top: 62px;">
+                    </div>
+                    <div class="card-body" style="max-width: 320px;">
+                        <h5 class="card-title">Natural smile</h5>
+                        <div class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                            eiusmod.</div>
+                        <div class="my-2 d-flex align-items-center text-center">
+                            <img width="50" height="50" class="profile-pic" src="./images/profile_1.jpg"
+                                alt="">
+                            <p activeclass="m-0"><span class="purpEmphasis ml-2">Phillip Massey</span></p>
+                        </div>
+                        <div class="d-flex justify-content-start my-2">
+                            <div class="d-flex" style="gap: 0.2rem;">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_on.png" width="30" height="30" alt="Star on">
+                                <img src="./images/star_off.png" width="30" height="30" alt="Star off">
+                            </div>
+                            <p class="ml-5" style="font-size: 1.3rem;"><span class="purpEmphasis">8
+                                    min</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
